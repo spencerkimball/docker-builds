@@ -10,5 +10,4 @@ ADD resolv.dnsmasq.conf /etc/resolv.dnsmasq.conf
 
 VOLUME [ "/dnsmasq.hosts" ]
 
-CMD ["-d"]
-ENTRYPOINT ["/usr/sbin/dnsmasq"]
+CMD ["/usr/sbin/dnsmasq", "-d"]
